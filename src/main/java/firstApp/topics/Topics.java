@@ -1,7 +1,7 @@
-package firstApp.items;
+package firstApp.topics;
 
-public class Items {
- private String name,id,description;
+public class Topics {
+ private String id,name,description;
 
 public String getName() {
 	return name;
@@ -27,7 +27,7 @@ public void setDescription(String description) {
 	this.description = description;
 }
 
-public Items(String name, String id, String description) {
+public Topics(String id, String name, String description) {
 	super();
 	this.name = name;
 	this.id = id;
