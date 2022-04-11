@@ -1,14 +1,28 @@
-package firstApp.topics;
+package firstApp.courses;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+//import javax.persistence.ManyToOne;
+
+//import firstApp.topics.Topics;
 
 @Entity
-public class Topics {
+public class Course {
 	@Id
 	private String id;
 	private String name;
 	private String description;
+
+////	@ManyToOne
+//	private Topics topic;
+//	
+//	public Topics getTopic() {
+//		return topic;
+//	}
+//
+//	public void setTopic(Topics topic) {
+//		this.topic = topic;
+//	}
 
 	public String getName() {
 		return name;
@@ -34,13 +48,20 @@ public class Topics {
 		this.description = description;
 	}
 
-	public Topics(String id, String name, String description) {
+//	public Course(String id, String name, String description,String topicId) {
+//		super();
+//		this.name = name;
+//		this.id = id;
+//		this.description = description;
+//		this.topic=new Topics(topicId,"","");
+//	}
+	public Course(String id, String name, String description) {
 		super();
 		this.name = name;
 		this.id = id;
 		this.description = description;
 	}
-	public Topics() {
+	public Course() {
 		
 	}
 
